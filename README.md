@@ -1,9 +1,8 @@
-
 # NLP & Machine Learning Projects
 
-A collection of practical Natural Language Processing (NLP) and Machine Learning projects covering the complete text analytics workflow, from text preprocessing and feature representation to classification, clustering, topic modelling, and information retrieval.
+A collection of practical Natural Language Processing (NLP) and Machine Learning projects covering text preprocessing, sentiment analysis, named entity recognition, topic modelling, text classification, clustering, and information retrieval.
 
-The projects demonstrate the application of classical machine learning and NLP techniques on both structured and unstructured textual data.
+The projects demonstrate the application of NLP and machine learning techniques to structured and unstructured text data, including preprocessing, feature engineering, model development, evaluation, visualization, and similarity-based retrieval.
 
 ---
 
@@ -11,89 +10,103 @@ The projects demonstrate the application of classical machine learning and NLP t
 
 ### 01. Text Preprocessing and Sentiment Classification
 
-Explores fundamental NLP preprocessing and text representation techniques for sentiment analysis.
+A text analytics pipeline covering text preprocessing, linguistic normalization, feature representation, named entity recognition, and sentiment classification.
 
-**Key techniques:**
-- Text tokenization
+**Key Techniques:**
+- Tokenization
 - Stop-word removal
-- Stemming and lemmatization
+- Stemming
+- Lemmatization
 - Named Entity Recognition
-- N-gram generation
+- N-gram analysis
 - Bag of Words
 - TF-IDF
 - Naive Bayes classification
-- Sentiment classification evaluation
+- Sentiment evaluation
 
 ---
 
 ### 02. Named Entity Recognition and Topic Modelling
 
-Identifies important entities in news articles and discovers underlying topics using unsupervised learning.
+An NLP pipeline that extracts named entities from news articles and identifies underlying topics using unsupervised topic modelling.
 
-**Key techniques:**
+**Key Techniques:**
 - Named Entity Recognition using spaCy
-- Entity extraction for PERSON, ORG, GPE, and DATE
+- PERSON, ORG, GPE, and DATE entity extraction
 - Text preprocessing
+- Tokenization
+- Stop-word removal
 - Lemmatization
 - Gensim Dictionary and Corpus
 - Latent Dirichlet Allocation (LDA)
 - Topic distribution analysis
 - Entity-topic relationships
-- Topic visualization and word clouds
+- Topic visualization
+- Word clouds
 
 ---
 
-### 03. News Article Text Classification
+### 03. News Article Classification
 
-Builds supervised machine learning models for categorizing news articles into predefined categories.
+A supervised machine learning project for categorizing news articles into predefined categories using traditional NLP feature representations and classification algorithms.
 
-**Key techniques:**
+**Key Techniques:**
 - Text preprocessing
-- Tokenization and lemmatization
+- Tokenization
+- Stop-word removal
+- Lemmatization
 - Bag of Words
 - TF-IDF
 - Train-test splitting
 - Multinomial Naive Bayes
 - Logistic Regression
-- Accuracy, Precision, Recall, and F1-score
-- Confusion matrix analysis
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion matrix
 - Misclassification analysis
 
 ---
 
 ### 04. Customer Feedback Clustering
 
-Uses unsupervised machine learning to identify common themes and patterns in customer feedback.
+An unsupervised learning project that identifies recurring themes and patterns in customer feedback using text vectorization and clustering.
 
-**Key techniques:**
+**Key Techniques:**
 - Text preprocessing
-- Tokenization and lemmatization
+- Tokenization
+- Stop-word removal
+- Lemmatization
 - TF-IDF feature extraction
 - K-Means clustering
-- Elbow method for cluster selection
+- Elbow method
 - Cluster analysis
 - Representative feedback analysis
 - Word cloud visualization
-- Customer service improvement recommendations
+- Theme identification
+- Service improvement recommendations
 
 ---
 
 ### 05. Mini Search Engine
 
-Implements a lightweight search engine capable of retrieving and ranking news articles based on query relevance.
+A lightweight information retrieval system that processes user queries and ranks relevant news articles based on textual similarity.
 
-**Key techniques:**
+**Key Techniques:**
 - Text preprocessing
+- Tokenization
+- Stop-word removal
 - Lemmatization
 - Bag of Words
 - TF-IDF
-- Cosine similarity
 - Query processing
+- Cosine similarity
 - Document ranking
-- Top-k search results
+- Top-k retrieval
 - Similarity score visualization
 
-The project uses the UCI News Aggregator dataset containing real-world news headlines and metadata.
+The project uses the UCI News Aggregator Dataset containing real-world news headlines and associated metadata.
 
 ---
 
@@ -113,12 +126,16 @@ The project uses the UCI News Aggregator dataset containing real-world news head
 - Scikit-learn
 - Gensim
 
-### Data Processing and Visualization
+### Data Processing
 
 - Pandas
 - NumPy
+
+### Data Visualization
+
 - Matplotlib
 - WordCloud
+- pyLDAvis
 
 ### Development Environment
 
@@ -138,110 +155,5 @@ NLP-Machine-Learning-Projects/
 ├── 04_Customer_Feedback_Clustering.py
 ├── 05_Mini_Search_Engine.py
 │
-└── README.md
-````
-
----
-
-## Skills Demonstrated
-
-This repository demonstrates practical experience with:
-
-* Natural Language Processing
-* Text preprocessing and normalization
-* Feature engineering for textual data
-* Bag-of-Words representation
-* TF-IDF representation
-* N-gram analysis
-* Named Entity Recognition
-* Topic Modelling
-* Supervised Text Classification
-* Unsupervised Text Clustering
-* Information Retrieval
-* Similarity and Ranking Algorithms
-* Model Evaluation
-* Data Visualization
-* Exploratory Text Analysis
-
----
-
-## Datasets
-
-The projects use a combination of structured, synthetic, and real-world textual datasets depending on the requirements of each experiment.
-
-The Mini Search Engine project uses the **UCI News Aggregator Dataset**, which contains news articles and associated metadata across multiple categories.
-
-Dataset source:
-
-[UCI Machine Learning Repository - News Aggregator Dataset](https://archive.ics.uci.edu/dataset/359/news+aggregator)
-
-The complete dataset is not included in this repository due to its size. Instructions for obtaining the dataset are provided in the relevant project.
-
----
-
-## How to Run
-
-The projects are designed to run in Google Colab or a local Python environment.
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/aaryakhaire/NLP-Machine-Learning-Projects.git
-cd NLP-Machine-Learning-Projects
-```
-
-### 2. Install the required libraries
-
-```bash
-pip install pandas numpy nltk spacy scikit-learn gensim matplotlib wordcloud
-```
-
-### 3. Run the desired project
-
-Each Python file contains the complete implementation for its respective experiment.
-
-For projects requiring external datasets, download the required dataset and place it in the appropriate working directory before execution.
-
----
-
-## Project Progression
-
-The projects follow a progression from foundational NLP techniques to more advanced text analytics applications:
-
-```text
-Text Preprocessing
-        |
-        v
-Feature Representation
-        |
-        v
-Text Classification
-        |
-        v
-Topic Modelling & Entity Analysis
-        |
-        v
-Text Clustering
-        |
-        v
-Information Retrieval & Search
-```
-
-This progression demonstrates how textual data can be transformed from raw language into structured representations and subsequently used for analysis, prediction, clustering, and retrieval.
-
----
-
-## Repository Purpose
-
-This repository serves as a practical portfolio of NLP and Machine Learning implementations, demonstrating the application of different techniques to real-world text analytics problems.
-
-The projects emphasize understanding the complete workflow rather than relying solely on pre-built models, including data preprocessing, feature engineering, model development, evaluation, visualization, and interpretation of results.
-
----
-
-## Author
-
-**Aarya Khaire**
-
-GitHub: [github.com/aaryakhaire](https://github.com/aaryakhaire)
-
+├── README.md
+└── requirements.txt
